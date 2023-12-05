@@ -422,10 +422,10 @@ def ConvNeXt(
     # (stride for each dimension for more flexibility)
     if type(stride_size) not in (tuple, list):
         stride_size = [
-            (stride_size, stride_size, stride_size,),
-            (stride_size, stride_size, stride_size,),
-            (stride_size, stride_size, stride_size,),
-            (stride_size, stride_size, stride_size,),
+            (2, 2, 2,),
+            (2, 2, 2,),
+            (2, 2, 2,),
+            (2, 2, 1,),
         ]
     else:
         stride_size = list(stride_size)
